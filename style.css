@@ -2,4 +2,11 @@
 body{
 	font-family: "Shrikhand, Roboto"; 
 } 
+/* Header */
+.header{
+    display: flex;
+    align-items: center;
+    max-width: 1500px;
+    margin: 0 auto;
+}
 
