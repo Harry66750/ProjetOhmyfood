@@ -1,146 +1,173 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<script src="https://kit.fontawesome.com/1d997a59e2.js" crossorigin="anonymous"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="homepages.css">
-    <link rel="stylesheet" href="animation.css">
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="menupages.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/main.css" />
+	<link rel="stylesheet" href="../menupage.css" />
+	<!--<link rel="stylesheet" href="../styleohmy.css" />-->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-	  rel="stylesheet">
-	 <title>ohmyfood!</title>
+	rel="stylesheet">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,700' rel='stylesheet' type='text/css'>
+	<title>ohmyfood!</title>
 </head>
-<body>
 	<!-- Header -->
-    <header class="header">
-    <img class="header_logo" src="images/logo/ohmyfood.png" alt="Logo Ohmyfood" style="margin:auto; display:block"/>
+  	<header class="header" style="background-color: white;">
+  		<img class="header_logo" src="images/logo/ohmyfood.svg" alt="Logo Ohmyfood" style="margin:auto; display:block" height: 150px; background-color:white;/>
+  	</header>
+  	  	<!-- Section localisation -->
+   	<section class="local" style="background-color: #DCDCDC;">
+	    <i class="fa-map-marker-alt fas local__icon"></i>
+	    <span style="font-family: 'Roboto'; font-size: 20px; font-weight: bold;" class="local__text">Paris, Belleville</span>
+    </section>
+    <section id="header">
+		<h4 style="font-family: 'Roboto'; margin-bottom: 1.25rem;"><strong>Réservez le menu qui<br>vous convient</strong></h4>
+   		<p style="font-family: 'Roboto'; text-align: center; font-size: 21px; font-weight: 300; margin-bottom: 1.25rem;">Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
+       	<p2 class="p2" style="font-family: 'Roboto'; font-size: 20px;">Explorer nos restaurants</p2>
+    </section>
+        <!-- Section Fonctionnement -->
+    <section id="function">
+    	    	<header>
+    	<h2 style="color: black; font-size: 35px; margin-top: -5rem;">Fonctionnement</h2>
+    	<div class="button_function">
+        <!--<h2 class="buttonFiltersTitle">Filtres</h2>-->
+        <div class="buttonFiltersFilter">
+        <div class="buttonFiltersFilterWrapicon">
+        <i class="1 buttonFiltersFilterWrapiconIcon">1</i>
+        </div>
+        <i class="fas fa-mobile-alt buttonFiltersWrapicon" style="color:black; font-size: 18px,"><span style="font-size: 18px;" class="buttonFiltersFilterTitle">Choisissez un restaurant</span></i>
+        </div>
+        <div class="buttonFiltersFilter">
+        <div class="buttonFiltersFilterWrapicon">
+        <i class="1 buttonFiltersFilterWrapiconIcon">2</i>
+        </div>
+        <i class="fas fa-list buttonFiltersWrapicon" style="color:black; font-size: 18px;"></i><span style="font-size: 18px;" class="buttonFiltersFilterTitle">Composez votre menu</span></i>
+        </div>
+        <div class="buttonFiltersFilter">
+        <div class="buttonFiltersFilterWrapicon">
+        <i class="1 buttonFiltersFilterWrapiconIcon">3</i>
+        </div>
+        <i class="fas fa-store buttonFiltersWrapicon" style="color:black; font-size: 18px;"></i><span style="font-size: 18px;" class="buttonFiltersFilterTitle">Dégustez au restaurant</span></i>
+        </div>
     </header>
-    <!-- Loader -->
-    <div class="loader">
-    <i class="fas fa-spinner"></i>
-    </div>
-    </header>
-    <!-- Accueil -->
- 	<main>
-    <section class="city">
-    <i class="fa-map-marker-alt fas city__icon"></i>
-    <span class="city__text">Paris, Belleville</span>
     </section>
-  	<section class="home">
-   	<h2 class="home__title">Réservez le menu qui<br>vous convient</h2>
-   	<p class="home__subtitle"> Découvrez des restaurants d'exception, séléctionnés par nos soins </p>
-    <a class="home__btn" href="#"> Explorer nos restaurants</a>
-    </section>
-    <!-- Fonctionement -->
-    <section>
-    <h2 class="functionTitle" style="padding-left: 1rem;">Fonctionnement</h2>
-    </section>
-    <section class="home2">
-    <i class="fas fa-mobile-alt"></i>
-    <a class="home2__btn" href="#">Choisissez un restaurant</a>
-    <!--<span class="home2__title">Choisissez un restaurant</span>-->
-    </section>
-    <section class="home2">
-    <i class="fas fa-list-ul"></i>
-    <a class="home2__btn" href="#">Composez votre menu</a>
-    <!--<span class="home3__title">Composez votre menu</span>-->
-    </section>
-    <section class="home2">
-    <i class="fas fa-mobile-alt"></i> <!-- corriger le fas fa-->
-    <a class="home2__btn" href="#">Dégustez au restaurant</a>
-    <!--<span class="home2__title">Dégustez au restaurant</span>-->
-    </section>
+        <!-- Section restaurants -->
+    	<section id="main">
+		<div class="container">
+		<div class="row">
+		<div class="col-12">
+		<section>
+		<header class="major">
+		<h2 style="color: black; font-size: 35px;">Restaurants</h2>
+		</header>
+		<div class="row">
+		<section class="box">
+		<div class="image img">
+		<a href="la_palette_du_gout.html" class="image featured"><img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="#"/></a>
+		<header>
+		<h3>La palette du goût<span class="fa fa-heart border-right" style="padding-left: 78px;"></span></h3>
+        <p>Ménilmontant</p>
+		</header>
+		<!--<footer>-->
+		<ul class="actions">
+		</ul>
+		</footer>
+		</section>
+		</div>
+		</div>
+		<section class="box">
+		<div class="image img">
+		<a href="la_note_enchantee.html" class="image featured"><img src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="#" /></a>
+		<header>
+		<h3>La note enchantée<span class="fa fa-heart border-right" style="padding-left: 78px;"></span></h3>
+        <p>Charonne</p>
+		</header>
+		<!--<footer>-->
+		<ul class="actions">
+		</ul>
+		</footer>
+		</section>
+		</div>
+		</div>
+		<section class="box">
+		<div class="image img">
+		<a href="a_la_francaise.html" class="image featured"><img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="#" /></a>
+		<header>
+		<h3>À la française<span class="fa fa-heart border-right" style="padding-left: 78px;"></span></h3>
+        <p>Cité Rouge</p>
+		</header>
+		<!--<footer>-->
+		<ul class="actions">
+		</ul>
+		</footer>
+		</section>
+		</div>
+		</div>
+		<section class="box">
+		<div class="image img">
+		<a href="le_delice_des_sens.html" class="image featured"><img src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="" /></a>
+		<header>
+		<h3>Le délice des sens<span class="fa fa-heart border-right" style="padding-left: 78px;"></span></h3>
+        <p>Folie-Méricourt</p>
+		</header>
+		<ul class="actions">
+		</ul>
+		</footer>
+		</section>
+		</div>
+		</div>
+		</section>
+		</div>
+		</div>
+		</div>
+		</div>
+		</section>
+			<!-- Section footer -->
 
-    <!-- Restaurants -->
-    <section class="hosting" id="hosting">
-    <div class="hostingMain">
-    <header class="hostingMainHeader">
-    <h2 class="hostingMainHeaderTitle">Restaurants</h2>
-    </header>
-    <article class="hostingMainCard">
-    <a href="la-palette-du-gout.html">
-    <figure class="hostingMainCardFigure">
-    <img class="hostingMainCardFigureImg" src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="#">
-    <figcaption class="hostingMainCardFigureCaption">
-    <h3 class="hostingMainCardFigureCaptionTitle">La palette du goût</h3>
-    </figcaption>
-    </figure>
-    <p class="hostingMainCardDesc">Ménilmontant</p>
-    <div class="hostingMainCardGrade">
-    <i class="fas fa-heart hostingMainCardGradeIcon" data-active="false"></i>
-    </div>
-    </a>
-    </article>
-    <article class="hostingMainCard">
-    <a href="la-note-enchantee.html">
-    <figure class="hostingMainCardFigure">
-    <img class="hostingMainCardFigureImg" src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="#">
-    <figcaption class="hostingMainCardFigureCaption">
-    <h3 class="hostingMainCardFigureCaptionTitle">La note enchantée</h3>
-    </figcaption>
-    </figure>
-    <p class="hostingMainCardDesc">Charonne</p>
-    <div class="hostingMainCardGrade">
-    <i class="fas fa-heart hostingMainCardGradeIcon" data-active="true"></i>
-    </div>
-    </a>
-    </article>
-    <article class="hostingMainCard">
-    <a href="a-la-francaise.html">
-    <figure class="hostingMainCardFigure">
-    <img class="hostingMainCardFigureImg" src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="#">
-    <figcaption class="hostingMainCardFigureCaption">
-    <h3 class="hostingMainCardFigureCaptionTitle">Á la française</h3>
-    </figcaption>
-    </figure>
-    <p class="hostingMainCardDesc">Cité Rouge</p>
-    <div class="hostingMainCardGrade">
-    <i class="fas fa-heart hostingMainCardGradeIcon" data-active="false"></i>
-    </div>
-    </a>
-    </article>
-    <article class="hostingMainCard">
-    <a href="le-delice-des-sens.html">
-    <figure class="hostingMainCardFigure">
-    <img class="hostingMainCardFigureImg" src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"    alt="#">
-    <figcaption class="hostingMainCardFigureCaption">
-    <h3 class="hostingMainCardFigureCaptionTitle">Le délice des sens</h3>
-    </figcaption>
-    </figure>
-    <p class="hostingMainCardDesc">Folie-Méricourt</p>
-    <div class="hostingMainCardGrade">
-    <i class="fas fa-heart hostingMainCardGradeIcon" data-active="false"></i>
-    </div>
-    </a>
-    </article>
-    </div>
-    </div>
-  	</section>
-    
-    <!-- Footer -->
-    <footer class="footer">
-    <img src="images/logo/footer_ohmyfood.png" style="padding-left: 2.1rem; padding-top: 1.2rem; width: 120px; margin: 0;" alt="Logo">
-    <div class="footerColumnwrapper">
-    <div class="footerColumnwrapperColumn">
-    <a href="#" style="color: white;">
-    <h3><i class="fas fa-utensils"></i>Proposer un restaurant</h3>
-    <a href="#" style="color: white;">
-    <h3><i class="fas fa-hands-helping"></i>Devenir partenaire</h3>
-    </a>
-    <a href="#" style="color: white;">
-    <h3>Mentions légales</h3>
-    </a>
-    <a href="mailto:contact@ohmyfood.com" style="color: white;">
-    <h3>Contact</h3>
-    </a>
-    </a>
-    </div>
-    </div>
-    </footer>
+			<footer>
+    <img class="logo" src="images/logo/ohmyfood.png" alt="logo ohmyfood">
+    <ul class="footer-link">
+    <li class="item"><span class="icon fas fa-utensils"></span>Proposez un restaurant</li>
+    <li class="item"><span class="icon fas fa-hands-helping"></span>Devenir partenaire</li>
+    <li class="item">Mentions légales</li>
+    <li class="item"><a href="mailto:contact@ohmyfood.com">Contact</a></li>
+    </ul>
+</footer>
 </body>
 </html>
+
+<!--
+
+
+
+
+		<footer>
+			<section id="footer">
+			<div class="container">
+			<div class="row">
+			<div class="col-8 col-12-medium">
+			<section>
+			<header>
+			<img src="images/logo/footer_ohmyfood.png" style="padding-left: 0.85rem; padding-top: 1.3rem; width: 120px; margin-bottom: 1.25rem;" alt="Logo">
+			<ul class="footer-list">
+	    	<li>
+	    	<i class="fas fa-utensils" style="color: white;"></i>
+	    	<a style="color: white;" href="#">Proposer un restaurant</a>
+	    	</li>
+	    	<li>
+	    	<i class="fas fa-hands-helping" style="color: white;"></i>
+	    	<a style="color: white;"href="#">Devenir partenaire</a>
+	    	</li>
+	    	<li><a style="color: white;"href="#">Mentions légales</a></li>
+	    	<li><a style="color: white;"href="mailto:contact@ohmyfood.fr">Contact</a></li>
+	    	</ul>
+	    	</div>
+	    	</div>
+	    </footer>->
+	</body>
+</html>-->
