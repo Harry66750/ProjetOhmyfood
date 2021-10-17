@@ -4,7 +4,7 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,900,300italic");
 
 /* CSS général */
-html, body, div, span, iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
+html, body, div, span, iframe, h1, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, 
 small, strike, strong, sub, sup, tt, var, b,
 u, i, center, dl, dt, dd, ol, ul, li, fieldset,
@@ -37,7 +37,7 @@ strong, b {
 	color: #252122;
 	font-weight: 400;
 }
-h1, h2, h3, h5, h6 {
+h1, h3, h5, h6 {
 	color: #252122;
 	font-weight: 700;
 }
@@ -47,6 +47,7 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 }
 h2 {
 	font-size: 1.5em;
+	font-family: "Roboto";
 }
 h3 {
 font-size: 1.35em;
@@ -117,6 +118,70 @@ p, ul, ol, dl, table {
 	display: inline-block;
 	padding: 2.5em 5em;
 	border-radius: 5px;
+}
+
+/* Section fonctionement - boutons */
+button,
+.button {
+	-webkit-appearance: none;
+	display: inline-block;
+	text-decoration: none;
+	cursor: pointer;
+	border: 0;
+	border-radius: 10px;
+	color: black;
+	font-weight: 700;
+	font-size: 1em;
+	padding: 0.50em 1em 0.50em 1em;
+	text-align: center;
+	-moz-transition: background-color .25s ease-in-out;
+	-webkit-transition: background-color .25s ease-in-out;
+	-ms-transition: background-color .25s ease-in-out;
+	transition: background-color .25s ease-in-out;
+}
+.button.alt {
+	background: #DCDCDC;
+}
+.button.alt:hover {
+	background: #99E2D0;
+}
+.button.icon:before {
+	opacity: 0.35;
+	position: relative;
+	top: 0.05em;
+	margin-right: 0.75em;
+}
+.button.large {
+	font-size: 1.25em;
+	padding: 0.75em 1.5em 0.75em 1.5em;
+}
+@media screen and (max-width: 480px) {
+.button.large {
+	font-size: 1.1em;
+	padding: 0.65em 1.5em 0.65em 1.5em;
+	}
+.button  button.alt {
+	width: 100%;
+	}
+}
+
+@media screen and (max-width: 736px) {
+.button.large {
+	font-size: 1.1em;
+	padding: 0.65em 1.5em 0.65em 1.5em;
+	}
+.button  button.alt{
+	width: 100%;
+	}
+}
+@media screen and (max-width: 980px) {
+.button.large {
+	font-size: 1.1em;
+	padding: 0.65em 1.5em 0.65em 1.5em;
+	}
+.button button.alt{
+	width: 100%;
+	}
 }
 
 /* Section restaurants */
@@ -842,59 +907,7 @@ ol, ul {
 	margin-bottom: 0;
 }
 
-/* Button */
-button,
-.button {
-	-webkit-appearance: none;
-	display: inline-block;
-	text-decoration: none;
-	cursor: pointer;
-	border: 0;
-	border-radius: 5px;
-	background: #d52349;
-	color: #fff !important;
-	font-weight: 700;
-	outline: 0;
-	font-size: 1.1em;
-	padding: 0.65em 1.5em 0.65em 1.5em;
-	text-align: center;
-	-moz-transition: background-color .25s ease-in-out;
-	-webkit-transition: background-color .25s ease-in-out;
-	-ms-transition: background-color .25s ease-in-out;
-	transition: background-color .25s ease-in-out;
-}
-button:hover,
-.button:hover {
-	background: #e53359;
-}
-button:active,
-.button:active {
-	background: #c51349;
-}
-button.alt,
-.button.alt {
-	background: #99E2D0;
-}
-button.alt:hover,
-.button.alt:hover {
-	background: #353132;
-}
-button.alt:active,
-.button.alt:active {
-background: #151112;
-}
-button.icon:before,
-.button.icon:before {
-	opacity: 0.35;
-	position: relative;
-	top: 0.05em;
-	margin-right: 0.75em;
-}
-button.large,
-.button.large {
-	font-size: 1.5em;
-	padding: 0.75em 1.5em 0.75em 1.5em;
-}
+
 
 /* Image */
 .image img {
