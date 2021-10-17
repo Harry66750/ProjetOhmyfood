@@ -5,9 +5,9 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<script src="https://kit.fontawesome.com/1d997a59e2.js" crossorigin="anonymous"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="css/main.css" />
-	<link rel="stylesheet" href="../menupage.css" />
-	<!--<link rel="stylesheet" href="../styleohmy.css" />-->
+	<link rel="stylesheet" href="css/style.css" />
+	<!--<link rel="stylesheet" href="menupage.css" />-->
+	<link rel="stylesheet" href="css/responsive.css" />
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
@@ -16,19 +16,20 @@
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,700' rel='stylesheet' type='text/css'>
 	<title>ohmyfood!</title>
 </head>
+<body>
 	<!-- Header -->
-  	<header class="header" style="background-color: white;">
+ 	<header class="header" style="background-color: white;">
   		<img class="header_logo" src="images/logo/ohmyfood.svg" alt="Logo Ohmyfood" style="margin:auto; display:block" height: 150px; background-color:white;/>
   	</header>
   	  	<!-- Section localisation -->
    	<section class="local" style="background-color: #DCDCDC;">
 	    <i class="fa-map-marker-alt fas local__icon"></i>
-	    <span style="font-family: 'Roboto'; font-size: 20px; font-weight: bold;" class="local__text">Paris, Belleville</span>
+	    <span style="font-size: 20px;" class="local__text">Paris, Belleville</span>
     </section>
     <section id="header">
-		<h4 style="font-family: 'Roboto'; margin-bottom: 1.25rem;"><strong>Réservez le menu qui<br>vous convient</strong></h4>
-   		<p style="font-family: 'Roboto'; text-align: center; font-size: 21px; font-weight: 300; margin-bottom: 1.25rem;">Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
-       	<p2 class="p2" style="font-family: 'Roboto'; font-size: 20px;">Explorer nos restaurants</p2>
+		<h4 style="margin-bottom: 1rem;"><strong>Réservez le menu qui<br>vous convient</strong></h4>
+   		<p style="text-align: center; font-size: 25px; font-weight: 300;">Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
+       	<p2 class="p2" style="font-size: 18px;">Explorer nos restaurants</p2>
     </section>
         <!-- Section Fonctionnement -->
     <section id="function">
@@ -56,8 +57,8 @@
         </div>
     </header>
     </section>
-        <!-- Section restaurants -->
-    	<section id="main">
+    	<!-- Section restaurants -->
+    <section id="main">
 		<div class="container">
 		<div class="row">
 		<div class="col-12">
@@ -66,56 +67,63 @@
 		<h2 style="color: black; font-size: 35px;">Restaurants</h2>
 		</header>
 		<div class="row">
+		<div class="col-4 col-6-medium col-12-small">
+			<section class="first">
 		<section class="box">
-		<div class="image img">
 		<a href="la_palette_du_gout.html" class="image featured"><img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="#"/></a>
 		<header>
-		<h3>La palette du goût<span class="fa fa-heart border-right" style="padding-left: 78px;"></span></h3>
-        <p>Ménilmontant</p>
+		<h3>La palette du goût<span class="fa fa-heart border-right" style="padding-left: 1px;"></span></h3>
+		<p>Ménilmontant</p>
 		</header>
 		<!--<footer>-->
 		<ul class="actions">
+		<!--<li><a href="#" class="button alt">Nouveau</a></li>-->
 		</ul>
 		</footer>
 		</section>
 		</div>
-		</div>
+		<div class="col-4 col-6-medium col-12-small">
+			<section class="middle">
 		<section class="box">
-		<div class="image img">
 		<a href="la_note_enchantee.html" class="image featured"><img src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="#" /></a>
 		<header>
-		<h3>La note enchantée<span class="fa fa-heart border-right" style="padding-left: 78px;"></span></h3>
-        <p>Charonne</p>
+		<h3>La note enchantée<span class="fa fa-heart border-right" style="padding-left: 1px;"></span></h3>
+		<p>Charone</p>
 		</header>
 		<!--<footer>-->
 		<ul class="actions">
+		<!--<li><a href="#" class="button alt">Nouveau</a></li>-->
 		</ul>
 		</footer>
 		</section>
 		</div>
-		</div>
+		<div class="col-4 col-6-medium col-12-small">
+		<section class="last">
 		<section class="box">
-		<div class="image img">
 		<a href="a_la_francaise.html" class="image featured"><img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="#" /></a>
 		<header>
-		<h3>À la française<span class="fa fa-heart border-right" style="padding-left: 78px;"></span></h3>
-        <p>Cité Rouge</p>
+		<h3>À la française<span class="fa fa-heart border-right" style="padding-left: 1px;"></span></h3>
+		<p>Cité Rouge</p>
+		<!--<h3>À la française</h3><span><i class="fa fa-heart main border-right" aria-hidden="true"></span></i>-->
 		</header>
+		<!--<p>Cité Rouge</p>-->
 		<!--<footer>-->
 		<ul class="actions">
+		<!--<li><a href="#" class="button alt">Nouveau</a></li>-->
 		</ul>
 		</footer>
 		</section>
 		</div>
-		</div>
+		<div class="col-4 col-6-medium col-12-small">
+			<section class="last">
 		<section class="box">
-		<div class="image img">
 		<a href="le_delice_des_sens.html" class="image featured"><img src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="" /></a>
 		<header>
-		<h3>Le délice des sens<span class="fa fa-heart border-right" style="padding-left: 78px;"></span></h3>
-        <p>Folie-Méricourt</p>
+		<h3>Le délice des sens<span class="fa fa-heart border-right" style="padding-left: 1px;"></span></h3>
+		<p>Folie-Méricourt</p>
 		</header>
-		<ul class="actions">
+				<ul class="actions">
+		<!--<li><a href="#" class="button alt">Nouveau</a></li>-->
 		</ul>
 		</footer>
 		</section>
@@ -125,11 +133,20 @@
 		</div>
 		</div>
 		</div>
-		</div>
 		</section>
-			<!-- Section footer -->
+	</div>
+</section>
+</div>
+</section>
+</div>
+</div>
+</section>
+</div>
+</div>
+</div>
 
-			<footer>
+<!-- Section footer -->
+<footer>
     <img class="logo" src="images/logo/ohmyfood.png" alt="logo ohmyfood">
     <ul class="footer-link">
     <li class="item"><span class="icon fas fa-utensils"></span>Proposez un restaurant</li>
@@ -141,33 +158,3 @@
 </body>
 </html>
 
-<!--
-
-
-
-
-		<footer>
-			<section id="footer">
-			<div class="container">
-			<div class="row">
-			<div class="col-8 col-12-medium">
-			<section>
-			<header>
-			<img src="images/logo/footer_ohmyfood.png" style="padding-left: 0.85rem; padding-top: 1.3rem; width: 120px; margin-bottom: 1.25rem;" alt="Logo">
-			<ul class="footer-list">
-	    	<li>
-	    	<i class="fas fa-utensils" style="color: white;"></i>
-	    	<a style="color: white;" href="#">Proposer un restaurant</a>
-	    	</li>
-	    	<li>
-	    	<i class="fas fa-hands-helping" style="color: white;"></i>
-	    	<a style="color: white;"href="#">Devenir partenaire</a>
-	    	</li>
-	    	<li><a style="color: white;"href="#">Mentions légales</a></li>
-	    	<li><a style="color: white;"href="mailto:contact@ohmyfood.fr">Contact</a></li>
-	    	</ul>
-	    	</div>
-	    	</div>
-	    </footer>->
-	</body>
-</html>-->
