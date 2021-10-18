@@ -4,14 +4,11 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,900,300italic");
 
 /* CSS général */
-html, body, div, span, iframe, h1, h3, h4, h5, h6, p, blockquote,
-pre, a, abbr, acronym, address, big, 
-small, strike, strong, sub, sup, tt, var, b,
-u, i, center, dl, dt, dd, ol, ul, li, fieldset,
-form, caption, tbody,
-tfoot, thead, tr, 
-canvas, embed, footer, header, output, ruby,
-section, summary, time, mark, audio, video {
+html, body, div, span, iframe, h1, h4, h5, h6, p, big, 
+small, strong, sub, sup, var, b,
+u, i, center, ol, ul, li, caption,  
+canvas, footer, header, ruby,
+section, summary, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -50,11 +47,14 @@ h2 {
 	font-family: "Roboto";
 }
 h3 {
-font-size: 1.35em;
+font-size: 1.1em;
 }
 h4 { font-family: 'Roboto', sans-serif; font-size: 30px;}
 p, ul, ol, dl, table {
 		margin-bottom: 2em;
+}
+p{
+	font-size: 1.1em;
 }
 
 /* Section header */
@@ -194,6 +194,7 @@ header.major h2 {
 	padding: 0 1em 0 1em;
 }
 
+
 /* Section restaurants - Ligne */
 .row {
 	display: flex;
@@ -235,10 +236,10 @@ header.major h2 {
 	margin-left: 16.66667%;
 }
 .row > .col-4 {
-	width: 24.33333%;
+	width: 25%;
 }
 .row > .off-4 {
-	margin-left: 24.33333%;
+	margin-left: 25%;
 }
 .row > .col-6 {
 	width: 50%;
@@ -293,10 +294,10 @@ header.major h2 {
 	order: -1;
 }
 .row > .col-4-xlarge {
-	width: 24.33333%;
+	width: 25%;
 }
 .row > .off-4-xlarge {
-	margin-left: 24.33333%;
+	margin-left: 25%;
 }
 .row > .col-6-xlarge {
 	width: 50%;
@@ -430,10 +431,10 @@ header.major h2 {
 	order: -1;
 }
 .row > .col-4-large {
-	width: 24.33333%;
+	width: 25%;
 }
 .row > .off-4-large {
-	margin-left: 24.33333%;
+	margin-left: 25%;
 }
 .row > .col-6-large {
 	width: 50%;
@@ -567,10 +568,10 @@ header.major h2 {
 	order: -1;
 }
 .row > .col-4-medium {
-	width: 24.33333%;
+	width: 25%;
 }
 .row > .off-4-medium {
-	margin-left: 24.33333%;
+	margin-left: 25%;
 }
 .row > .col-6-medium {
 	width: 50%;
@@ -707,10 +708,10 @@ header.major h2 {
 	order: -1;
 }
 .row > .col-4-small {
-	width: 24.33333%;
+	width: 25%;
 }
 .row > .off-4-small {
-	margin-left: 24.33333%;
+	margin-left: 25%;
 }
 .row > .col-6-small {
 	width: 50%;
@@ -907,8 +908,6 @@ ol, ul {
 	margin-bottom: 0;
 }
 
-
-
 /* Image */
 .image img {
 	display: block;
@@ -959,7 +958,7 @@ ol li {
 	opacity: 0.1;
 }
 #main .major h2 {
-	background: #f7f7f7 url("images/bg02.png");
+	background: #f7f7f7;
 }
 
 /* XLarge */
