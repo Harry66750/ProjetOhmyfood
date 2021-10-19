@@ -5,7 +5,7 @@
 
 /* CSS général */
 html, body, div, span, iframe, h1, h4, h5, h6, p, big, 
-small, strong, sub, sup, var, b,
+small, sub, sup, var, b,
 u, i, center, ol, ul, li, caption,  
 canvas, footer, header, ruby,
 section, summary, mark, audio, video {
@@ -30,10 +30,6 @@ body, input, select {
 	font-size: 14pt;
 	line-height: 1.75em;
 }
-strong, b {
-	color: #252122;
-	font-weight: 400;
-}
 h1, h3, h5, h6 {
 	color: #252122;
 	font-weight: 700;
@@ -49,7 +45,7 @@ h2 {
 h3 {
 font-size: 1.1em;
 }
-h4 { font-family: 'Roboto', sans-serif; font-size: 30px;}
+h4 { font-family: 'Roboto', sans-serif; font-size: 30px; font-size: bold;}
 p, ul, ol, dl, table {
 		margin-bottom: 2em;
 }
@@ -61,10 +57,11 @@ p{
 .header {
 	text-align: center;
 	padding: 2em 0;
+	margin-bottom: -12px;
 }
 #header {
 	position: relative;
-	background: #E5E5E5;
+	background: #F5F5F5;
 	border-bottom: solid 1px #ccc;
 	padding: 5em 0 4em 0;
 	text-align: center;
@@ -96,7 +93,7 @@ p{
 
 /*  Section localisation  */
 .local{
-  background-color: #eaeaea;
+  background-color: #EFEFEF;
   padding: 1rem 1.25rem;
   text-align: center;
   margin-bottom: auto;
@@ -140,7 +137,7 @@ button,
 	transition: background-color .25s ease-in-out;
 }
 .button.alt {
-	background: #DCDCDC;
+	background: #F5F5F5;
 }
 .button.alt:hover {
 	background: #99E2D0;
@@ -185,6 +182,18 @@ button,
 }
 
 /* Section restaurants */
+.fa-heart:before {
+    content: "\f004";
+    padding-left: 19px;
+    cursor:pointer;
+}
+/*
+.fa-heart {
+	background: white;
+}
+.fa-hear:hover {
+	background: #99E2D0;
+}*/
 header.major h2 {
 	background: #fff;
 	position: relative;
@@ -192,6 +201,18 @@ header.major h2 {
 	display: inline;
 	margin: 0;
 	padding: 0 1em 0 1em;
+}
+.new_restaurant_button {
+    text-align: center;
+    font-family: 'Roboto';
+    font-weight: bold;
+    width: 100px;
+    float: right;
+    margin: 10px;
+    border-radius: 2px;
+    background-color: #99e2d0;
+    color: #2f8f78c7;
+    padding: 5px 10px;
 }
 
 /* Section restaurants - Colonne */
@@ -327,19 +348,7 @@ header.major h2 {
 .row > * {
 	padding: 30px 0 0 30px;
 }
-.row.gtr-200 {
-	margin-top: -60px;
-	margin-left: -60px;
-}
-.row.gtr-200 > * {
-	padding: 60px 0 0 60px;
-}
-.row.gtr-200.gtr-uniform {
-	margin-top: -60px;
-}
-.row.gtr-200.gtr-uniform > * {
-	padding-top: 60px;
-}
+
 }
 @media screen and (max-width: 980px) {
 .row {
@@ -381,8 +390,6 @@ header.major h2 {
 .row > .off-12-medium {
 	margin-left: 100%;
 }
-.
-.
 .row {
 	margin-top: -40px;
 	margin-left: -40px;
