@@ -8,7 +8,7 @@ html, body, div, span, iframe, h1, h4, h5, h6, p, big,
 small, sub, sup, var, b,
 u, i, center, ol, ul, li, caption,  
 canvas, footer, header, ruby,
-section, summary, mark, audio, video {
+section, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -186,14 +186,10 @@ button,
     content: "\f004";
     padding-left: 19px;
     cursor:pointer;
+  }
+ .fa-heart:hover {
+	background: #9356DC;
 }
-/*
-.fa-heart {
-	background: white;
-}
-.fa-hear:hover {
-	background: #99E2D0;
-}*/
 header.major h2 {
 	background: #fff;
 	position: relative;
@@ -213,6 +209,26 @@ header.major h2 {
     background-color: #99e2d0;
     color: #2f8f78c7;
     padding: 5px 10px;
+}
+
+/* Section restaurants - Main */
+#main {
+	position: relative;
+	background: #f7f7f7;
+	padding: 4em 0 4em 0;
+}
+#main:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-size: 100% 100%;
+	z-index: 0;
+	opacity: 0.1;
+}
+#main .major h2 {
+	background: #f7f7f7;
 }
 
 /* Section restaurants - Colonne */
@@ -561,26 +577,7 @@ ol li {
 	padding-left: 0.25em;
 }
 
-/* restaurants Main */
-#main {
-	position: relative;
-	background: #f7f7f7;
-	padding: 4em 0 4em 0;
-}
-#main:before {
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	background: url("images/bg01.png");
-	background-size: 100% 100%;
-	z-index: 0;
-	opacity: 0.1;
-}
-#main .major h2 {
-	background: #f7f7f7;
-}
+
 
 /* XLarge */
 @media screen and (max-width: 1680px) {
@@ -597,38 +594,6 @@ body, input, select {
 	font-size: 11pt;
 }
 
-/* Section/Article */
-header.major {
-	margin: 0.75em 0 2.5em 0;
-}
-header.major h2 {
-	padding: 0 1em 0 1em;
-}
-
-/* Header */
-#header {
-	padding: 4em 0 3em 0;
-}
-
-/* function */
-#function {
-	padding: 6em 0;
-	margin: 3em 0 0 0;
-}
-
-/* Intro */
-#intro {
-	padding: 0;
-}
-#intro section {
-	padding: 1em 2em;
-}
-#intro .middle:before {
-	left: -12px;
-}
-#intro .middle:after {
-	right: -12px;
-}
 
 /* Main */
 #main {
