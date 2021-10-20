@@ -19,8 +19,13 @@
 <body>
 	<!-- Header -->
  	<header class="header" style="background-color: white;">
-  		<img class="header_logo" src="images/logo/ohmyfood.svg" alt="Logo Ohmyfood" style="margin:auto; display:block" height: 150px; background-color:white;/>
+  	<img class="header_logo" src="images/logo/ohmyfood.svg" alt="Logo Ohmyfood" style="margin:auto; display:block" height: 150px; background-color:white;>
   	</header>
+  	<!-- Loader -->
+    <!--<div class="loader">
+    <i class="fas fa-spinner"></i>
+    </div>
+    </header>-->
   	  	<!-- Section localisation -->
    	<section class="local" style="background-color: #EFEFEF;">
 	    <i class="fa-map-marker-alt fas local__icon"></i>
@@ -35,21 +40,26 @@
     <section id="function">
     	<header>
     	<h2 style="color: black; font-family:Roboto; font-size: 32px; padding-left: 5px; margin-top: -5rem;">Fonctionnement</h2>
-    	<div class="button alt">
-    	<a href="#" class="button alt"><i class="fas fa-mobile-alt button alt" style="color:black; font-size: 18px,"><span style="padding-left: 10px; font-family:Roboto; font-size: 16px;">Choisissez un restaurant</span></i></a>
-    	</i>
-    	</div>
+    	<div class="restaurant_filters">
+        <div class="restaurant_filter">
+        <div class="restaurant_icon"><span style="color:white;">1</span>
+        </div>
+        <i class="fas fa-mobile searchFiltersFilterTitle"></i>
+        <span style="padding-left:10px;" class="restaurant_title">Choisissez un restaurant</span>
+        </div>
+        <div class="restaurant_filter">
+        <div class="restaurant_icon"><span style="color:white;">2</span>
+        </div>
+        <i class="fas fa-list searchFiltersFilterTitle"></i>
+        <span style="padding-left:10px;" class="restaurant_title">Composez votre menu</span>
+        </div>
+        <div class="restaurant_filter">
+        <div class="restaurant_icon"><span style="color:white;">3</span>
+        </div>
+        <i class="fas fa-store searchFiltersFilterTitle"></i>
+        <span style="padding-left:10px;" class="restaurant_title">Dégustez au restaurant</span>
+        </div>
     </header>
-    <header>
-    	<div class="button alt">
-    		<a href="#" class="button alt"><i class="fas fa-list button alt" style="color:black; font-size: 18px,"><span style="padding-left: 10px; font-size: 16px;">Composez votre menu</span></i></a>
-		</div>
-	</header>
-	<header>
-    	<div class="button alt">
-		<a href="#" class="button alt"><i class="fas fa-store button alt" style="color:black; font-size: 18px,"><span style="padding-left: 10px; font-size: 16px;">Dégustez au restaurant</span></i></a>
-		</div>
-	</header>
     </section>
     	<!-- Section restaurants -->
     <section id="main">
@@ -64,15 +74,12 @@
 		<div class="col-4 col-6-medium col-12-small">
 			<section class="first">
 		<section class="box">
-		<a href="la_palette_du_gout.html" class="image featured"><img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="#"/></a>
-		<div class="new_restaurant_button image featured">Nouveau</div>
+		<a href="la_palette_du_gout.html" class="image featured"><img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="#"/><span class="new_restaurant_button image featured">Nouveau</span></a>
 		<header>
 		<h3>La palette du goût<span class="far fa-heart heart"></span></h3>
 		<p>Ménilmontant</p>
 		</header>
-		<!--<footer>-->
 		<ul class="actions">
-		<!--<li><a href="#" class="button alt">Nouveau</a></li>-->
 		</ul>
 		</footer>
 		</section>
@@ -80,15 +87,12 @@
 		<div class="col-4 col-6-medium col-12-small">
 			<section class="middle">
 		<section class="box">
-		<a href="la_note_enchantee.html" class="image featured"><img src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="#" /></a>
-		<div class="new_restaurant_button image featured">Nouveau</div>
+		<a href="la_note_enchantee.html" class="image featured"><img src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="#" /><span class="new_restaurant_button image featured">Nouveau</span></a>
 		<header>
 		<h3>La note enchantée<span class="far fa-heart heart"></span></h3>
 		<p>Charone</p>
 		</header>
-		<!--<footer>-->
 		<ul class="actions">
-		<!--<li><a href="#" class="button alt">Nouveau</a></li>-->
 		</ul>
 		</footer>
 		</section>
@@ -100,12 +104,8 @@
 		<header>
 		<h3>À la française<span class="far fa-heart heart"></span></h3>
 		<p>Cité Rouge</p>
-		<!--<h3>À la française</h3><span><i class="fa fa-heart main border-right" aria-hidden="true"></span></i>-->
 		</header>
-		<!--<p>Cité Rouge</p>-->
-		<!--<footer>-->
 		<ul class="actions">
-		<!--<li><a href="#" class="button alt">Nouveau</a></li>-->
 		</ul>
 		</footer>
 		</section>
@@ -119,7 +119,6 @@
 		<p>Folie-Méricourt</p>
 		</header>
 				<ul class="actions">
-		<!--<li><a href="#" class="button alt">Nouveau</a></li>-->
 		</ul>
 		</footer>
 		</section>
@@ -153,4 +152,3 @@
 </footer>
 </body>
 </html>
-
