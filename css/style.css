@@ -210,18 +210,17 @@ header.major h2 {
 	padding: 0 1em 0 1em;
 }
 .new_restaurant_button {
-	display: inline-block;
-    text-align: center;
+	text-align: center;
     font-family: 'Roboto';
     font-weight: bold;
-    width: 30px;
+    width: 100px;
     float: right;
     margin: 10px;
     border-radius: 2px;
     background-color: #99e2d0;
     color: #2f8f78c7;
-    /*padding-right: 50px;*/
- }
+    padding: 5px 10px;
+}
 
 /* Section restaurants - Main */
 #main {
@@ -269,10 +268,10 @@ header.major h2 {
 	margin-left: 16.67%;
 }
 .row > .col-4 {
-	width: 25%;
+	width: 50%;
 }
 .row > .off-4 {
-	margin-left: 25%;
+	margin-left: 50%;
 }
 .row > .col-6 {
 	width: 50%;
@@ -306,10 +305,10 @@ header.major h2 {
 	order: -1;
 }
 .row > .col-4-xlarge {
-	width: 25%;
+	width: 50%;
 }
 .row > .off-4-xlarge {
-	margin-left: 25%;
+	margin-left: 50%;
 }
 .row > .col-6-xlarge {
 	width: 50%;
@@ -346,10 +345,10 @@ header.major h2 {
 	order: -1;
 }
 .row > .col-4-large {
-	width: 25%;
+	width: 50%;
 }
 .row > .off-4-large {
-	margin-left: 25%;
+	margin-left: 50%;
 }
 .row > .col-6-large {
 	width: 50%;
@@ -392,10 +391,10 @@ header.major h2 {
 	order: -1;
 }
 .row > .col-4-medium {
-	width: 25%;
+	width: 50%;
 }
 .row > .off-4-medium {
-	margin-left: 25%;
+	margin-left: 50%;
 }
 .row > .col-6-medium {
 	width: 50%;
@@ -441,10 +440,10 @@ header.major h2 {
 	order: -1;
 }
 .row > .col-4-small {
-	width: 25%;
+	width: 50%;
 }
 .row > .off-4-small {
-	margin-left: 25%;
+	margin-left: 50%;
 }
 .row > .col-6-small {
 	width: 50%;
