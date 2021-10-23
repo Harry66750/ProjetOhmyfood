@@ -15,25 +15,17 @@ section, audio, video {
 html {
 	box-sizing: border-box;
 }
-body, input, select {
-	font-family: 'Source Sans Pro';
-	font-weight: 300;
-	color: #5d5d5d;
-	font-size: 14pt;
-	line-height: 1.75em;
-}
-h1, h5, h6 {
-	color: #252122;
-	font-weight: 700;
-}
 h2 {
 	font-size: 1.5em;
-	font-family: "Roboto";
+	font-family: 'Roboto';
+	font-weight: bold;
 }
 h3 {
-font-size: 1.1em;
+font-size: 1.2em;
+font-family: 'Roboto';
+font-weight: bold;
 }
-h4 { font-family: 'Roboto', sans-serif; font-size: 30px;}
+h4 { font-family: 'Roboto', sans-serif; font-size: 30px; margin-top: 0;}
 p, ul, ol, dl, table {
 		margin-bottom: 2em;
 }
@@ -76,22 +68,22 @@ p{
 }
 .p2:hover {
   	opacity: 0.5;
-  -webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.4);
+  	-webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.4);
           box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.4);
 }
 .p2.large {
-font-size: 1.5em;
-padding: 0.75em 1.5em 0.75em 1.5em;
+	font-size: 1.5em;
+	padding: 0.75em 1.5em 0.75em 1.5em;
 }
 
 /* Section loader */
 
 /*  Section localisation  */
 .local{
-  background-color: #EFEFEF;
-  padding: 1rem 1.25rem;
-  text-align: center;
-  margin-bottom: auto;
+  	background-color: #EFEFEF;
+  	padding: 1rem 1.25rem;
+  	text-align: center;
+  	margin-bottom: auto;
 }
 
 /* Section fonctionnement */
@@ -123,7 +115,7 @@ padding: 0.75em 1.5em 0.75em 1.5em;
   display: flex;
   align-items: center;
 }
-.restaurant_filter {
+.btn_restaurant_filter {
   display: flex;
   align-items: center;
   margin-right: 2rem;
@@ -144,7 +136,7 @@ padding: 0.75em 1.5em 0.75em 1.5em;
 .searchFiltersFilter:last-child {
   margin-right: 0;
 }
-.restaurant_filter:hover {
+.btn_restaurant_filter:hover {
 	background: #99E2D0;
  }
 .restaurant_icon {
@@ -157,7 +149,7 @@ padding: 0.75em 1.5em 0.75em 1.5em;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0;
+  margin: 20px;
   float: left; 
 }
 .restaurant_title {
@@ -195,11 +187,20 @@ padding: 0.75em 1.5em 0.75em 1.5em;
 
 /* Section restaurants */
 .fa-heart {
-	float: right;
-    cursor:pointer;
-  }
- .fa-heart:hover {
-	background-color: #9356DC;
+    color: #FFF;
+    background-color: #000;
+    border-radius: 50%;
+    padding:.2em;
+    float: right;
+}
+.fa-heart::before {
+    content: "\f004";
+    font-weight: bold;
+    transition: color 1s ease-out;
+}
+.fa-heart:hover::before{
+	color: #FF79DA;
+    cursor: pointer;
 }
 header.major h2 {
 	background: #fff;
@@ -222,6 +223,35 @@ header.major h2 {
     padding: 5px 10px;
 }
 
+/* Section restaurant - image */
+.image img {
+	display: block;
+	width: 100%;
+}
+.image.featured {
+	display: block;
+	width: 100%;
+	margin: 0 0 2em 0;
+}
+
+/* Section restaurant - box-image */
+.box {
+	background: #ffffff;
+	border-bottom: solid 1px #ccc;
+	padding: 2.75em 1.75em 2.75em 1.75em;
+}
+.box .image.featured {
+	position: relative;
+	width: auto;
+	left: 1.75em;
+	top: 1.75em;
+	margin: -4.5em 0 4.25em -3.5em;
+}
+.box.post header {
+	padding-top: 1em;
+	margin: 0 0 2em 0;
+}
+
 /* Section restaurants - Main */
 #main {
 	position: relative;
@@ -240,6 +270,33 @@ header.major h2 {
 }
 #main .major h2 {
 	background: #f7f7f7;
+}
+
+/* Section restaurant - container */
+.container {
+	margin: 0 auto;
+	max-width: 100%;
+	width: 70em;
+}
+@media screen and (max-width: 1680px) {
+.container {
+	width: 70em;
+}
+}
+@media screen and (max-width: 1280px) {
+.container {
+	width: calc(100% - 60px);
+}
+}
+@media screen and (max-width: 980px) {
+.container {
+	width: calc(100% - 80px);
+}
+}
+@media screen and (max-width: 736px) {
+.container {
+	width: calc(100% - 40px);
+}
 }
 
 /* Section restaurants - Colonne */
@@ -472,33 +529,6 @@ header.major h2 {
 }
 }
 
-/* Section restaurant - Container */
-.container {
-	margin: 0 auto;
-	max-width: 100%;
-	width: 70em;
-}
-@media screen and (max-width: 1680px) {
-.container {
-	width: 70em;
-}
-}
-@media screen and (max-width: 1280px) {
-.container {
-	width: calc(100% - 60px);
-}
-}
-@media screen and (max-width: 980px) {
-.container {
-	width: calc(100% - 80px);
-}
-}
-@media screen and (max-width: 736px) {
-.container {
-	width: calc(100% - 40px);
-}
-}
-
 /* Section footer */
 footer {
   position: relative;
@@ -531,48 +561,6 @@ ol, ul {
 	list-style: none;
 }
 
-/* Box */
-.box {
-	background: #ffffff;
-	border-bottom: solid 1px #ccc;
-	padding: 2.75em 1.75em 2.75em 1.75em;
-}
-.box .image.featured {
-	position: relative;
-	width: auto;
-	left: 1.75em;
-	top: 1.75em;
-	margin: -4.5em 0 4.25em -3.5em;
-}
-.box.post header {
-	padding-top: 1em;
-	margin: 0 0 2em 0;
-}
-.box.post header > p {
-	margin-top: 1.25em;
-	font-size: 1.25em;
-	width: 100%
-}
-.box footer ul.actions {
-	margin-bottom: 0;
-}
-
-/* Image */
-.image img {
-	display: block;
-	width: 100%;
-	}
-
-.image.centered img {
-	margin: 0 auto;
-	width: auto;
-}
-.image.featured {
-	display: block;
-	width: 100%;
-	margin: 0 0 2em 0;
-}
-
 /* List */
 ul {
 	list-style: disc;
@@ -588,8 +576,6 @@ list-style: decimal;
 ol li {
 	padding-left: 0.25em;
 }
-
-
 
 /* XLarge */
 @media screen and (max-width: 1680px) {
@@ -629,16 +615,6 @@ body, input, select {
 @media screen and (max-width: 980px) {
 html, body {
 	overflow-x: hidden;
-}
-.box footer ul.actions li {
-	margin: 1em 0 0 0;
-	display: block;
-}
-.box footer ul.actions li .button {
-	width: 100%;
-}
-.box footer ul.actions li:first-child {
-	margin-top: 0;
 }
 #header {
 	padding: 3.5em 0 3em 0;

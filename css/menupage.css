@@ -83,11 +83,11 @@ main {
 }
 
 /*  Section MAIN accueil */
-.concept {
+/*.concept {
   padding-bottom: 20px;
   background-color: whitesmoke;
   text-align: center;
-}
+}*/
 .location {
   background-color: #f0f0f0;
 }
@@ -341,67 +341,24 @@ main {
           box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.4);
 }
 
-/*  Section boutons checkbox  */
-.checkbox-like {
+/*  Section boutons - coeur  */
+.fa-heart {
   position: absolute;
   right: 20px;
   bottom: 35px;
   height: 25px;
   font-size: 25px;
-  cursor: pointer;
 }
-.checkbox-like.checkbox-like--position {
-  position: initial;
-  margin-top: 20px;
+.fa-heart::before {
+    content: "\f004";
+    font-weight: bold;
+    transition: color 1s ease-out;
 }
-.checkbox-like input[type=checkbox]:checked ~ .unchecked {
-  display: none;
-}
-.checkbox-like input[type=checkbox]:checked ~ .checked {
-  display: inline-block;
-  color: rgba(255, 255, 255, 0);
-}
-.checkbox-like input[type=checkbox], .checkbox-like .checked {
-  display: none;
-  -webkit-animation: like 2s;
-          animation: like 2s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+.fa-heart:hover::before{
+  color: #FF79DA;
+    cursor: pointer;
 }
 
-@-webkit-keyframes like {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
-    background: linear-gradient(to bottom, #9356DC, #FF79DA);
-    -webkit-background-clip: text;
-  }
-  100% {
-    background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
-    background: linear-gradient(to bottom, #9356DC, #FF79DA);
-    -webkit-background-clip: text;
-  }
-}
-
-@keyframes like {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
-    background: -o-linear-gradient(top, #9356DC, #FF79DA);
-    background: linear-gradient(to bottom, #9356DC, #FF79DA);
-    -webkit-background-clip: text;
-  }
-  100% {
-    background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
-    background: -o-linear-gradient(top, #9356DC, #FF79DA);
-    background: linear-gradient(to bottom, #9356DC, #FF79DA);
-    -webkit-background-clip: text;
-  }
-}
 /*  Section boutons - sélection plats  */
 .ellipse {
   overflow: hidden;
@@ -416,7 +373,7 @@ main {
 .title_sup {
   font-weight: normal;
 }
-.prix {
+.price {
   padding: 38px 15px 0 15px;
   font-weight: bold;
 }
