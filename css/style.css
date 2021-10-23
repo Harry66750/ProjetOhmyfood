@@ -187,11 +187,11 @@ p{
 
 /* Section restaurants */
 .fa-heart {
-    color: #FFF;
-    background-color: #000;
-    border-radius: 50%;
+    color: black;
+    /*border: 2px solid;*/
     padding:.2em;
     float: right;
+    font-size: 24px;
 }
 .fa-heart::before {
     content: "\f004";
