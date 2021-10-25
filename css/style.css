@@ -187,11 +187,13 @@ header.major h2 {
     font-weight: bold;
     width: 100px;
     float: right;
-    margin: 10px;
+    margin: auto;
     border-radius: 2px;
     background-color: #99e2d0;
     color: #2f8f78c7;
     padding: 5px 10px;
+    position: absolute;
+    top: 50px;
 }
 
 /* Section restaurant - image */
