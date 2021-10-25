@@ -210,6 +210,7 @@ header.major h2 {
 
 /* Section restaurant - box-image */
 .box {
+	border-radius: 25px;
 	background: #ffffff;
 	border-bottom: solid 1px #ccc;
 	padding: 2.75em 1.75em 2.75em 1.75em;
