@@ -156,35 +156,6 @@ p{
   margin: 0 1rem;
 }
 
-@media screen and (max-width: 480px) {
-.button.large {
-	font-size: 1.1em;
-	padding: 0.65em 1.5em 0.65em 1.5em;
-	}
-.button  button.alt {
-	width: 100%;
-	}
-}
-
-@media screen and (max-width: 736px) {
-.button.large {
-	font-size: 1.1em;
-	padding: 0.65em 1.5em 0.65em 1.5em;
-	}
-.button  button.alt{
-	width: 100%;
-	}
-}
-@media screen and (max-width: 980px) {
-.button.large {
-	font-size: 1.1em;
-	padding: 0.65em 1.5em 0.65em 1.5em;
-	}
-.button button.alt{
-	width: 100%;
-	}
-}
-
 /* Section restaurants */
 .fa-heart {
     color: black;
@@ -225,6 +196,7 @@ header.major h2 {
 
 /* Section restaurant - image */
 .image img {
+	border-radius: 25px;
 	display: block;
 	width: 100%;
 }
@@ -247,10 +219,10 @@ header.major h2 {
 	top: 1.75em;
 	margin: -4.5em 0 4.25em -3.5em;
 }
-.box.post header {
+/*.box.post header {
 	padding-top: 1em;
 	margin: 0 0 2em 0;
-}
+}*/
 
 /* Section restaurants - Main */
 #main {
@@ -557,9 +529,9 @@ footer .footer-link .item a {
 body {
 	line-height: 1;
 }
-ol, ul {
+/*ol, ul {
 	list-style: none;
-}
+}*/
 
 /* List */
 ul {
