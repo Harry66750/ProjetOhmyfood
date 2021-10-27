@@ -125,6 +125,7 @@ main {
 }
 .photo {
   width: 100%;
+  height: 42.25vw;
   border-radius: 20px 20px 0 0;
 }
 .menu {
@@ -157,6 +158,7 @@ main {
 .photopage {
   position: relative;
   width: 100%;
+  height: 42.25vw;
 }
 .intro {
   position: relative;
@@ -300,12 +302,8 @@ main {
   height: 25px;
   font-size: 25px;
 }
-.fa-heart::before {
-    content: "\f004";
-    font-weight: bold;
-    transition: color 1s ease-out;
-}
 .fa-heart:hover::before{
+  transition: color 1s ease-out;
   color: #FF79DA;
     cursor: pointer;
 }
