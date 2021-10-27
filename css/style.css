@@ -198,33 +198,36 @@ p{
   cursor: pointer;
   font-family:'Roboto';
   background: #F5F5F5;
-  font-weight: 600;
-  font-size: 1.3em;
-  border-radius: 19px;
-  height: 70px;
-  width: 350px;
+  font-weight: 500;
+  font-size: 1.1em;
+  border-radius: 20px;
+  height: 60px;
+  width: 349px;
   align-items: center;
   justify-content: center;
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.4);
 }
-.searchFiltersFilter:last-child {
+/*.searchFiltersFilter:last-child {
   margin-right: 0;
-}
+}*/
 .btn_restaurant_filter:hover {
 	background: #99E2D0;
  }
 .restaurant_icon {
+  padding: .6rem;
+  position: absolute;
+  left: .95rem;
   background-color: #9356DC;
   border-radius: 100%;
-  height: 2rem;
-  width: 2rem;
-  min-height: 2rem;
-  min-width: 2rem;
+  height: 1.45rem;
+  width: 1.45rem;
+  min-height: 1.45rem;
+  min-width: 1.45rem;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 20px;
-  float: left; 
+  /*float: left; */
 }
 .restaurant_title {
   margin: 0 1rem;
@@ -236,26 +239,13 @@ p{
     /*border: 2px solid;*/
     padding:.2em;
     float: right;
-    font-size: 24px;
+    font-size: 20px;
 }
-/*.fa-heart::before {
-    content: "\f004";
-    font-weight: bold;
-    transition: color 1s ease-out;
-}*/
 .fa-heart:hover::before{
 	transition: color 1s ease-out;
 	color: #FF79DA;
     cursor: pointer;
 }
-/*header.major h2 {
-	background: #fff;
-	position: relative;
-	top: -0.65em;
-	display: inline;
-	margin: 0;
-	padding: 0 1em 0 1em;
-}*/
 .new_restaurant_button {
 	background-color: #99e2d0;
     color: #1b6150;
@@ -264,6 +254,7 @@ p{
     position: absolute;
     top: 1rem;
     right: .75rem;
+    font-size: 12px;
 }
 
 /* Section restaurant - image */
@@ -370,13 +361,13 @@ p{
 	margin-left: 16.67%;
 }
 .row > .col-4 {
-	width: 50%;
+	width: 25%;
 }
 .row > .off-4 {
 	margin-left: 50%;
 }
 .row > .col-6 {
-	width: 50%;
+	width: 25%;
 }
 .row > .off-6 {
 	margin-left: 50%;
@@ -407,13 +398,13 @@ p{
 	order: -1;
 }
 .row > .col-4-xlarge {
-	width: 50%;
+	width: 25%;
 }
 .row > .off-4-xlarge {
 	margin-left: 50%;
 }
 .row > .col-6-xlarge {
-	width: 50%;
+	width: 25%;
 }
 .row > .off-6-xlarge {
 	margin-left: 50%;
@@ -447,13 +438,13 @@ p{
 	order: -1;
 }
 .row > .col-4-large {
-	width: 50%;
+	width: 25%;
 }
 .row > .off-4-large {
 	margin-left: 50%;
 }
 .row > .col-6-large {
-	width: 50%;
+	width: 25%;
 }
 .row > .off-6-large {
 	margin-left: 50%;
@@ -493,13 +484,13 @@ p{
 	order: -1;
 }
 .row > .col-4-medium {
-	width: 50%;
+	width: 25%;
 }
 .row > .off-4-medium {
 	margin-left: 50%;
 }
 .row > .col-6-medium {
-	width: 50%;
+	width: 25%;
 }
 .row > .off-6-medium {
 	margin-left: 50%;
@@ -542,13 +533,13 @@ p{
 	order: -1;
 }
 .row > .col-4-small {
-	width: 50%;
+	width: 25%;
 }
 .row > .off-4-small {
 	margin-left: 50%;
 }
 .row > .col-6-small {
-	width: 50%;
+	width: 25%;
 }
 .row > .off-6-small {
 	margin-left: 50%;
