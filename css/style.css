@@ -70,70 +70,43 @@ p{
 }
 
 /* Section loader */
-.indic{
-	bottom: 20px;
-	right: 20px;
-}
-.container{
-	perspective: 800px;
-	perspective-origin: 50% 50%;
-	left: 20%;
-	top: 20%;
-}
-@keyframes rotate{
-	from{ transform: rotateY(0deg) rotateX(0deg); }
-		to { transform: rotateY(360deg) rotateX(360deg); }
-}
-@-webkit-keyframes webkitRotate{
-		from{ -webkit-transform: rotateY(0deg) rotateX(0deg); }
-		to { -webkit-transform: rotateY(360deg) rotateX(360deg); }
-}
-.cube{
+.chargement{
+	z-index: 1000;
+	border: 10px solid #f3f3f3;
+	border-top: 10px solid red;
+	border-bottom: 10px solid blue;
+	border-left: 10px solid green;
+	border-right: 10px solid black;
+	border-radius: 50%;
+	width: 100px;
+	height: 100px;
+	-webkit-animation: spin 12.5s;
+	-o-animation: spin 10s;
+	animation: spin 3s;
+	margin: auto;
+	padding: auto;
 	position: fixed;
-	transform-style: preserve-3d;
-	width: 200px;
-	height: 200px;
-	animation: rotate 10s;
-	z-index: 10000;
-	-webkit-animation: webkitRotate 15s;
-}
-div figure{
-	border: #000 3px solid;
-	height: 200px;
-	width: 200px;
-	padding: 0px;
-	margin: 0px;
-	background-color: #a90329;
-	box-sizing: border-box;
-} 
-div figure p{
-	margin: 40% auto;
-	text-align: center;
-}
-.cube:hover figure{
-	background-color: #a90329;
-	background: -moz-linear-gradient(top,  #a90329 0%, #8f0222 83%, #6d0019 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a90329), color-stop(83%,#8f0222), color-stop(100%,#6d0019));
-	background: -webkit-linear-gradient(top,  #a90329 0%,#8f0222 83%,#6d0019 100%);
-	background: -o-linear-gradient(top,  #a90329 0%,#8f0222 83%,#6d0019 100%);
-	background: -ms-linear-gradient(top,  #a90329 0%,#8f0222 83%,#6d0019 100%);
-	background: linear-gradient(to bottom,  #a90329 0%,#8f0222 83%,#6d0019 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a90329', endColorstr='#6d0019',GradientType=0 );
+	top: 0; left: 0, right:0; bottom: 0;
 }
 
-.left{ transform: rotateY(-90deg) translateZ(100px); }
-.right{ transform: rotateY(90deg) translateZ(100px); }
-.top{ transform: rotateX(90deg) translateZ(100px); }
-.bottom{ transform: rotateX(-90deg) translateZ(100px); }
-.front{ transform: rotateY(0deg) translateZ( 100px ); opacity: 0;}
-.back{ transform: rotateY(180deg) translateZ(100px); }
+/* Animation loader */
+@-webkit-keyframes spin{
+	0%{
+		-webkit-transform: rotate(0deg);
+		}
+	100%{
+		-webkit-transform: rotate(360deg);
+		}
+	}
 
-.cube:hover .front{ transform: translateZ(150px); opacity: 0;}
-.cube:hover .back{ transform: translateZ(-150px);}
-.cube:hover .right{ transform: rotateY(90deg) translateZ(150px);}
-.cube:hover .left{ transform: rotateY(-90deg) translateZ(150px); }
-.cube:hover .top{ transform: rotateX(90deg) translateZ(150px);}
-.cube:hover .bottom{ transform: rotateX(-90deg) translateZ(150px);opacity: 0;}
+@keyframes spin{
+	0%{
+		transform: rotate(0deg);
+		}
+	100%{
+		transform: rotate(360deg);
+		}
+}
 
 /*  Section localisation  */
 .local{
