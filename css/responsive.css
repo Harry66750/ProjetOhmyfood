@@ -64,3 +64,17 @@
     margin: 0px 10px 30px 10px;
 }
 }
+
+@video-width: 780px;
+
+iframe {  
+  width: 100%; 
+  max-width: @video-width;
+  height: 42.25vw;    
+}
+
+@media (min-width:@video-width) {
+  iframe {
+    height: calc(@video-width * 0.5628205128205128);
+  }
+}
