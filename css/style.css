@@ -1,5 +1,5 @@
 @import url("fontawesome-all.min.css");
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,900,300italic");
+
 /* CSS général */
 html, body, div, h1, h5, h6, ol, ul, li, caption,  
 footer, ruby,
@@ -8,6 +8,7 @@ section, audio, video {
 	padding: 0;
 	border: 0;
 	font-size: 100%;
+	font-family: 'Roboto', 'Shrikhand' cursive;
 	font: inherit;
 	vertical-align: baseline;}
 
@@ -74,15 +75,15 @@ p{
     position: fixed;
     height: 100px;
     width: 100px;
-    border-top: 10px solid red;
-	border-bottom: 10px solid blue;
+    border-top: 10px solid #FF79DA;
+	border-bottom: 10px solid #FF79DA;
 	border-left: 10px solid #9356DC;
-	border-right: 10px solid #FF79DA;
+	border-right: 10px solid #9356DC;
 	border-radius: 50%;
 	margin: auto;
 	padding: auto;
     left: 38rem;
-    animation: loader 5.01s;
+    animation: loader 6.01s;
     animation-delay: 0.55s;
     animation-fill-mode: both;
     z-index: 10000;
@@ -103,11 +104,11 @@ p{
 	0%{
 		transform: rotate(0deg);
 		overflow: hidden;
-		}
+	}
 	100%{
 		transform: rotate(360deg);
 		 visibility: hidden;
-		 }
+	}
 }
 
 /*  Section localisation  */
@@ -184,6 +185,9 @@ p{
 .restaurant_title {
   margin: 0 1rem;
 }
+/*@media screen (max-width: 799px) {
+	width: auto;
+}
 
 /* Section restaurants */
 .menu_icon {
@@ -192,7 +196,6 @@ p{
     margin-top: -40px;
     padding-left: 50px;
 }
-
 .fill-btn {
     overflow: hidden;
     position: relative;
@@ -202,14 +205,12 @@ p{
     transform: scale(0.35);
 
 }
-
 #fill-btn-path
  {
     fill: none;
     stroke: black;
     stroke-width: 0.5rem;
 }
-
 .radientBg {
     width: 100%;
     height: 100%;
@@ -220,7 +221,6 @@ p{
     transform: translateY(100px);
     transition: transform 0.7s ease-out;
 }
-
 .fill-btn:hover .radientBg {
     transform: translateY(0);
 }
@@ -547,9 +547,6 @@ body, {
 }
 }
 
-/* Large */
-@media screen and (max-width: 1280px) {
-
 /* Basic */
 body, {
 	font-size: 11pt;
@@ -560,13 +557,6 @@ body, {
 	padding: 30px 0;
 }
 
-/* Footer */
-#footer {
-	padding: 3em 0;
-}
-#footer:/*before*/ {
-	height: 2.5em;
-}
 #footer header {
 	margin: 0 0 1.5em 0;
 }
@@ -574,11 +564,7 @@ body, {
 	font-size: 1.25em;
 }
 
-/* Medium */
-@media screen and (max-width: 980px) {
-html, body {
-	overflow-x: hidden;
-}
+
 #header {
 	padding: 3.5em 0 3em 0;
 }
@@ -588,7 +574,7 @@ html, body {
 }
 
 /* Responsive */
-@media all and (min-width: 1480px) {
+@media all and (min-width: 1680px) {
 	
 	body {
 		width: 100%;
@@ -604,8 +590,8 @@ html, body {
 	}
 
 /*  Sections accueil et restaurants  */  
-	#main, .header, .#header, .function; #function header, .function__title, .restaurant_filters, .btn_restaurant_filter, .restaurant_title,
-	.restaurant__icon, .new_restaurant_button, .image img, .image.featured, .box, .box .image.featured, #footer, {
+	#main, .header, .#header, .function; #function header, .function__title, .searchFiltersFilterTitle, .restaurant_filters, .btn_restaurant_filter, .restaurant_title,
+	.restaurant_icon, .new_restaurant_button, .image img, .image.featured, .box, .box .image.featured, #footer, {
 
 	 {
 		display: -webkit-box;
