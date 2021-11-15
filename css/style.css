@@ -8,7 +8,7 @@ section, audio, video {
 	padding: 0;
 	border: 0;
 	font-size: 100%;
-	font-family: 'Roboto', 'Shrikhand' cursive;
+	font-family: "Roboto", "Shrikhand", cursive;
 	font: inherit;
 	vertical-align: baseline;}
 
@@ -73,16 +73,12 @@ p{
 /* Section loader */
 .loader {
     position: fixed;
-    height: 100px;
-    width: 100px;
-    border-top: 10px solid #FF79DA;
-	border-bottom: 10px solid #FF79DA;
-	border-left: 10px solid #9356DC;
-	border-right: 10px solid #9356DC;
-	border-radius: 50%;
-	margin: auto;
-	padding: auto;
-    left: 38rem;
+    height: 1500px;
+    width: 1500px;
+    background: whitesmoke;
+    opacity: 0.8;
+    margin: auto;
+	left: 38rem;
     animation: loader 6.01s;
     animation-delay: 0.55s;
     animation-fill-mode: both;
@@ -90,7 +86,71 @@ p{
     display:flex;
     align-items:center;
     justify-content:center;
-    top: 0; left: 0, right:0; bottom: 0;
+    top: 0; left: 0; right:0; bottom: 0;
+}
+.lettre{
+	font-size: 80px;
+	letter-spacing: 15px;
+	margin-bottom: 150px;
+	animation: flash 3.2s linear;
+}
+@keyframes flash {
+	0% {
+		color: #fff900;
+		text-shadow: 0 0 7px #fff900;
+		overflow: hidden;
+
+	}
+	90%{
+		color: #484848;
+		text-shadow: none;
+		outline: hidden;
+	}
+	100%{
+		color: #fff900;
+		text-shadow: 0 0 7px #fff900;
+		visibility: hidden;
+		opacity: 0;
+		z-index: -10;
+	}
+}
+.lettre:nth-child(1){
+	animation-delay: 0.1s; 
+}
+.lettre:nth-child(2){
+	animation-delay: 0.2s; 
+}
+.lettre:nth-child(3){
+	animation-delay: 0.3s; 
+}
+.lettre:nth-child(4){
+	animation-delay: 0.4s; 
+}
+.lettre:nth-child(5){
+	animation-delay: 0.5s; 
+}
+.lettre:nth-child(6){
+	animation-delay: 0.6s; 
+}
+.lettre:nth-child(7){
+	animation-delay: 0.7s; 
+}
+.lettre:nth-child(8){
+	animation-delay: 0.8s; 
+}
+.lettre:nth-child(9){
+	animation-delay: 0.9s; 
+}
+.lettre:nth-child(1){
+	animation-delay: 0.10s; 
+}
+.lettre:nth-child(10){
+	animation-delay: 0.11s; 
+}
+.fondu-out{
+	opacity: 0;
+	transition: opacity 0.4s ease-out;
+	z-index: -10;
 }
 
 @keyframes loader {
@@ -106,7 +166,7 @@ p{
 		overflow: hidden;
 	}
 	100%{
-		transform: rotate(360deg);
+		transform: rotate(0deg);
 		 visibility: hidden;
 	}
 }
@@ -186,7 +246,8 @@ p{
   margin: 0 1rem;
 }
 /*@media screen (max-width: 799px) {
-	width: auto;
+	.restaurant_icon{
+	margin-right: 1rem;
 }
 
 /* Section restaurants */
@@ -269,7 +330,7 @@ p{
 	background: #f7f7f7;
 	padding: 4em 0 4em 0;
 }
-#main:/*before */{
+#main:before{
 	content: '';
 	position: absolute;
 	top: 0;
@@ -282,6 +343,13 @@ p{
 #main .major h2 {
 	background: #f7f7f7;
 }
+@media screen and (min-width: 1800px) {
+	.main, #main, .main .major h2{
+    	max-width: 2560px;
+        max-width: 1800px;
+        margin: auto;
+    }
+}
 
 /* Section restaurant - container */
 .container {
@@ -292,22 +360,36 @@ p{
 @media screen and (max-width: 1680px) {
 .container {
 	width: 70em;
-}
+	}
 }
 @media screen and (max-width: 1280px) {
 .container {
 	width: calc(100% - 60px);
-}
+	}
+	.restaurant_icon {
+		right: 3.2rem;
+	}
 }
 @media screen and (max-width: 980px) {
 .container {
 	width: calc(100% - 80px);
-}
+	}
 }
 @media screen and (max-width: 736px) {
 .container {
 	width: calc(100% - 40px);
+	}
+.restaurant_title {
+  	margin: 1rem;
+	}
 }
+@media screen and (max-width: 480px) {
+.container {
+	width: calc(100% - 20px);
+	}
+.restaurant_title {
+  	margin: 2rem;
+	}
 }
 
 /* Section restaurants - Colonne */
@@ -542,13 +624,13 @@ ol li {
 
 /* XLarge */
 @media screen and (max-width: 1680px) {
-body, {
+body {
 	font-size: 12pt;
 }
 }
 
 /* Basic */
-body, {
+body {
 	font-size: 11pt;
 }
 
@@ -573,9 +655,8 @@ body, {
 	}
 }
 
-/* Responsive */
-@media all and (min-width: 1680px) {
-	
+/* Responsive - all */
+@media screen and (min-width: 400px) and (max-width: 1680px) {
 	body {
 		width: 100%;
 		display: -webkit-box;
@@ -587,21 +668,4 @@ body, {
 				flex-direction: column;
 		margin: 0;
 		padding: 0;
-	}
-
-/*  Sections accueil et restaurants  */  
-	#main, .header, .#header, .function; #function header, .function__title, .searchFiltersFilterTitle, .restaurant_filters, .btn_restaurant_filter, .restaurant_title,
-	.restaurant_icon, .new_restaurant_button, .image img, .image.featured, .box, .box .image.featured, #footer, {
-
-	 {
-		display: -webkit-box;
-		display: -ms-flexbox;
-		display: flex;
-		-webkit-box-orient: vertical;
-		-webkit-box-direction: normal;
-			-ms-flex-direction: column;
-				flex-direction: column;
-		-webkit-box-align: center;
-			-ms-flex-align: center;
-				align-items: center;
 	}
