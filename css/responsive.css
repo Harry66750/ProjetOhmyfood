@@ -54,9 +54,30 @@
 }
 }
 
-@media all and (max-width: 400px) {
+@media screen and (max-width: 1280px) {
+	.photopage, .photo {
+	height: 280px;
+}
+@media all and (max-width: 1024px) {
+	.photopage, .photo {
+	height: 250px;
+}
+@media screen and (max-width: 980px) {
+	.photopage, .photo {
+	height: 230px;
+}
+@media all and (max-width: 780px) {
+	.photopage, .photo {
+	height: 210px;
+}
+
+@media all and (max-width: 480px) {
 
 /*  Section menupage  */
+.photopage, .photo {
+	height: 150px;
+}
+
 .title_sup {
     font-size: 14px;
 }
@@ -75,6 +96,6 @@ iframe {
 
 @media (min-width:@video-width) {
   iframe {
-    height: calc(@video-width * 0.5628205128205128);
+    height: calc(@video-width * 0.3628205128205128);
   }
 }
