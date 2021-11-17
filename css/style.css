@@ -208,6 +208,7 @@ p{
 .restaurant_filters {
   display: flex;
   margin-top: 0rem;
+  margin-left: 35px;
   flex-wrap: wrap;
 }
 .btn_restaurant_filter {
@@ -248,11 +249,28 @@ p{
 .restaurant_title {
   margin: 0 1rem;
 }
-@media screen and (min-width: 400px) and (max-width: 736px) {
+@media screen and (min-width: 480px) and (max-width: 980px) {
+	.function__title {
+		margin-left: -20px;
+    }
 	.restaurant_filters {
-		margin: auto;
+		margin-left: -45px;
 	}
-}
+	.searchFiltersFilterTitle{
+		margin-left: -65px;
+	}
+	.btn_restaurant_filter{
+		right: 350rem;
+		width: 265px;
+	}
+	.restaurant_icon {
+		right: 3.5rem;
+		height: 0.50rem;
+  		width: 0.50rem;
+  		min-height: 0.50rem;
+  		min-width: 0.50rem;
+  	}
+  }
 
 /* Section restaurants */
 .menu_icon {
