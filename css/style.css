@@ -248,6 +248,11 @@ p{
 .restaurant_title {
   margin: 0 1rem;
 }
+@media screen and (min-width: 400px) and (max-width: 736px) {
+	.restaurant_filters {
+		margin: auto;
+	}
+}
 
 /* Section restaurants */
 .menu_icon {
