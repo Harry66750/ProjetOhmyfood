@@ -268,12 +268,18 @@ p{
 
 @media screen and (min-width: 375px) and (max-width: 650px){
 	.restaurant_filters {
-        max-width: 350px;
+        max-width: 340px;
         min-width: 280px;
         margin-left: -20px;
-                 
-        }
     }
+    .searchFiltersFilterTitle{
+    	margin-left: -30px;
+    }
+    .restaurant_icon {
+    	right: 3rem;
+    	padding: .4rem;
+    }
+}
 
 /* Section restaurants */
 .menu_icon {
