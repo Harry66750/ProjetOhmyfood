@@ -273,6 +273,7 @@ p{
 		position: relative;
 		display: flex;
 		margin: auto;
+		float: left;
 		/*margin-left: 30px;
 		margin-right: 30px;
 		margin-left: -35px;
