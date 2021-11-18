@@ -269,9 +269,9 @@ p{
 
 @media screen and (min-width: 375px) and (max-width: 650px){
 	.restaurant_filters {
-            max-width: 330px;
-            min-width: 280px;
-            margin-right: 25px;
+        max-width: 330px;
+        min-width: 280px;
+        margin-left: -10px;
                  
         }
     }
