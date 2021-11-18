@@ -270,7 +270,10 @@ p{
 		margin-left: -20px;
     }
 	.restaurant_filters {
-		margin-left: 30px;
+		position: relative;
+		display: flex;
+		margin: auto;
+		/*margin-left: 30px;
 		margin-right: 30px;
 		margin-left: -35px;
 		/*width: 150%;*/
