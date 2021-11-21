@@ -175,7 +175,8 @@ p{
 /* Section fonctionement - boutons */
 .restaurant_filters {
   display: flex;
-  margin-top: 0rem;
+  margin-top: 1rem;
+  margin-left: 50px;
   flex-wrap: wrap;
 }
 .btn_restaurant_filter {
@@ -222,8 +223,8 @@ p{
 
 @media screen and (min-width: 480px) and (max-width: 650px) {
 	.restaurant_filters {
-	margin-left: -80px;
-  	width: 720px;
+	margin-left: -3px;
+  	width: 750px;
 }
 
 /*
