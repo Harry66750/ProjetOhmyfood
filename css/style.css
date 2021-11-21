@@ -325,22 +325,6 @@ p{
 	background: #f7f7f7;
 }
 
-@media screen and (min-width: 768px) {
-  .main {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-@media screen and (max-width: 768px) and (min-width: 650px) {
-  .main {
-    grid-template-columns: 1fr 1fr;
-    background-color: white;
-  }
-}
-
-/*
-
-
-
 @media screen and (min-width: 1800px) {
 	.main, #main, .main .major h2{
     	max-width: 2560px;
