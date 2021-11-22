@@ -225,13 +225,18 @@ p{
 @media screen and (max-width: 650px) {
 .function {
     width: 100%;
+    margin-left: 8rem;
   }
-.searchFiltersFilter {
+.restaurant_filters {
+  margin-left: -10px;
+  }
+
+/*.searchFiltersFilter {
     margin-right: 1rem;
   }
   .btn_restaurant_filter {
-  	margin-left: -10px;
-  }
+  	margin-left: -25px;
+  }*/
 }
 
 /* Section restaurants */
