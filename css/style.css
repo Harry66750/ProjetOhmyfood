@@ -132,7 +132,7 @@ p{
 		 visibility: hidden;
 	}
 }
-@media screen and (min-width: 400px) and (max-width: 650px) {
+@media screen and (min-width: 480px) and (max-width: 650px) {
 .loader {
     margin-left: -420px;
 }*/
@@ -599,7 +599,7 @@ ol li {
 }
 
 /* Responsive - all */
-@media screen and (min-width: 400px) and (max-width: 1680px) {
+@media screen and (min-width: 480px) and (max-width: 1680px) {
 	body {
 		width: 100%;
 		display: -webkit-box;
