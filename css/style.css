@@ -220,7 +220,7 @@ p{
 }
 .searchFiltersFilterTitle{
    	margin-left: -86px;
-    }
+}
 
 @media screen and (max-width: 650px) {
 .function {
@@ -245,7 +245,6 @@ p{
     height: 90px;
     width: 90px;
     transform: scale(0.35);
-
 }
 #fill-btn-path
  {
@@ -493,7 +492,6 @@ p{
 }
 }
 
-
 @media screen and (max-width: 736px) and (min-width: 480px) {
 .row {
 	display: flex;
@@ -577,18 +575,6 @@ list-style: decimal;
 }
 ol li {
 	padding-left: 0.25em;
-}
-
-/* XLarge */
-@media screen and (max-width: 1680px) {
-body {
-	font-size: 12pt;
-}
-}
-
-/* Basic */
-body {
-	font-size: 11pt;
 }
 
 /* Main */
