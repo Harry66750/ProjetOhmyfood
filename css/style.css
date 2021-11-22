@@ -229,6 +229,9 @@ p{
 .searchFiltersFilter {
     margin-right: 1rem;
   }
+  .btn_restaurant_filter {
+  	margin-left: -10px;
+  }
 }
 
 /* Section restaurants */
@@ -492,7 +495,7 @@ p{
 }
 }
 
-@media screen and (max-width: 736px) and (min-width: 480px) {
+@media screen and (max-width: 736px) {
 .row {
 	display: flex;
 	flex-wrap: wrap;
