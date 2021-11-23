@@ -229,22 +229,11 @@ p{
   }
 .restaurant_filters {
 	margin: auto;
-  /*margin-left: 10px;*/
-  width: 350px;
+	width: 335px;
   }
-/*
-.searchFiltersFilter {
-    margin-right: 1.8rem;
-  }*/
   .restaurant_icon {
   right: 4.6rem;
 }
-
-/*
-
-  .btn_restaurant_filter {
-  	margin-left: -25px;
-  }*/
 }
 
 /* Section restaurants */
