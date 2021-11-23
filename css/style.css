@@ -228,12 +228,20 @@ p{
     margin-left: 8rem;
   }
 .restaurant_filters {
-  margin-left: -10px;
+	margin: auto;
+  /*margin-left: 10px;*/
+  width: 350px;
   }
+/*
+.searchFiltersFilter {
+    margin-right: 1.8rem;
+  }*/
+  .restaurant_icon {
+  right: 4.6rem;
+}
 
-/*.searchFiltersFilter {
-    margin-right: 1rem;
-  }
+/*
+
   .btn_restaurant_filter {
   	margin-left: -25px;
   }*/
