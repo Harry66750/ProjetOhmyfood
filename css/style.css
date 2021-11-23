@@ -142,10 +142,10 @@ p{
 }
 @media screen and (max-width: 479px) {
 .loader {
-    margin-left: -520px;
+    margin-left: -500px;
 }*/
 .point{
-	margin-left: -420px;
+	margin-left: -450px;
 	}
 }
 
@@ -236,6 +236,7 @@ p{
 .restaurant_filters {
 	margin: auto;
 	width: 335px;
+	right: 0.35rem;
   }
   .restaurant_icon {
   right: 4.6rem;
