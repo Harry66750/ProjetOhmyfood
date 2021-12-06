@@ -214,46 +214,21 @@ main {
 }
 
 /*  Section boutons - coeur  */
-.menu_icon {
-    display: flex;
+.heart {
+    font-size: 33px;
+    margin-right: 20px;
+    margin-top: 5px;
+    /*padding-left: 50px;*/
     float: right;
     position: absolute;
-    top: 0rem;
+    top: 0.5rem;
     right: .75rem;
   }
-
-.fill-btn {
-    overflow: hidden;
-    position: relative;
-    clip-path: url(#menu_icon-svg-path);
-    height: 90px;
-    width: 90px;
-    transform: scale(0.35);
-
-}
-
-#fill-btn-path
- {
-    fill: none;
-    stroke: black;
-    stroke-width: 0.5rem;
-}
-
-.radientBg {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    opacity: 1;
-    background: linear-gradient(#FF79DA 0%, #9356DC 80%);
-    transform: translateY(100px);
-    transition: transform 0.7s ease-out;
-}
-
-.fill-btn:hover .radientBg {
-    transform: translateY(0);
-}
-
+  .fa-heart:hover {
+    font-weight: bold;
+    color: #9356dc;
+  }
+  
 /*  Section boutons - sélection plats  */
 .ellipse {
   overflow: hidden;
